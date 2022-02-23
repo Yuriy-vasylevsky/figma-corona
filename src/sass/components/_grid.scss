@@ -1,0 +1,24 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * 72px);
+  margin-left: calc(-1 * 72px);
+
+  @media screen and (max-width: 767.99px) {
+    margin-top: calc(-1 * 30px);
+    margin-left: calc(-1 * 30px);
+  }
+}
+
+.grid-item {
+  margin-top: 72px;
+  margin-left: 72px;
+  flex-basis: calc(100% / 3 - 72px);
+
+  @media screen and (max-width: 767.99px) {
+    flex-basis: calc(100%);
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}

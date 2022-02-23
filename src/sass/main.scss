@@ -1,73 +1,45 @@
 @import './base/common';
 @import './base/container';
+@import './components/grid';
+@import './layouts/heder';
+@import './layouts/hero';
+@import './layouts/feathurs2';
+@import './layouts/experts';
+@import './layouts/healthcare';
 
-// .header {
-
-// }
-.header__container {
-  height: 114px;
-  display: flex;
-  align-items: center;
-}
-
-// .container{
-
-// }
-// .logo {
-// }
-
-.logo-img {
-  width: 140px;
-  height: 40px;
-}
-.header__menu {
-  margin-left: auto;
-}
-// .menu{
-
-// }
-.header__button {
-  width: 252px;
-  display: flex;
-  justify-content: flex-end;
-}
-.header__list {
-  display: flex;
-  margin-left: auto;
-}
-.button {
-  font-weight: 800;
-  font-size: 10px;
-  line-height: 1.2;
-  letter-spacing: 0.14em;
-
-  border-radius: 5px;
-  padding: 14px 30px 14px 30px;
-  color: #fcfdfe;
-  background-color: #ec5863;
-  transition: background-color 300ms;
-
-  &:hover {
-    background-color: #ec5863;
+.footer {
+  padding-bottom: 47px;
+  &__img {
+    width: 160px;
+    height: 55px;
   }
 }
 
-.button_blue {
-  background-color: #4285f4;
+.footer {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  &:hover {
-    background-color: #699ff7;
+    @media screen and (max-width: 767.99px) {
+      flex-direction: column;
+    }
   }
-}
 
-.header__item {
-  margin-right: 40px;
-}
+  &__img {
+    width: 160px;
+    height: 55px;
+  }
 
-.header__link {
-  font-weight: bold;
-  font-size: 10px;
-  line-height: 12px;
-  letter-spacing: 0.14em;
-  color: #000000;
+  &__img:last-child {
+    height: 60px;
+  }
+
+  &__img:not(:last-child) {
+    margin-right: 60px;
+
+    @media screen and (max-width: 767.99px) {
+      margin: 0px;
+    }
+  }
 }

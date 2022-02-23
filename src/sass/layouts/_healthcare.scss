@@ -1,0 +1,132 @@
+.healthcare {
+  padding-top: 80px;
+  padding-bottom: 75px;
+  &__container {
+  }
+
+  &__blok-text {
+    margin-bottom: 46px;
+  }
+
+  &__items {
+    display: flex;
+    padding: 0 35px 0 35px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+.blok-text {
+  &_center {
+    text-align: center;
+  }
+}
+
+.blok-text__text_weds {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.item-healthcare {
+  background: #ffffff;
+  box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+  border-radius: 8px;
+  position: relative;
+  z-index: 2;
+
+  &__icon {
+    width: 64px;
+    height: 72px;
+    margin: 0 auto;
+    // padding-top: 36px;
+    // padding-bottom: 58px;
+    margin-bottom: 58px;
+    margin-top: 36px;
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 138.5%;
+    letter-spacing: 0.08em;
+    color: #000000;
+    padding-bottom: 4px;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 12px;
+    line-height: 138.5%;
+    letter-spacing: 0.08em;
+    padding: 0 17px 36px 17px;
+  }
+}
+.healthcare__column {
+  position: relative;
+  z-index: 2;
+}
+
+.healthcare__column_1::after,
+.healthcare__column_1::before {
+  position: absolute;
+  background: #ec5863;
+  content: '';
+  border-radius: 30px;
+}
+
+.healthcare__column_1::after {
+  bottom: -26px;
+  left: -20px;
+  width: 65.75px;
+  height: 65.75px;
+  border-radius: 16px;
+  transform: rotate(-30deg);
+}
+
+.healthcare__column_1::before {
+  width: 96.96px;
+  height: 96.96px;
+  top: 52px;
+  left: 225px;
+  transform: rotate(105deg);
+
+  @media screen and (max-width: 767.99px) {
+    left: 150px;
+  }
+}
+
+.healthcare__column_2::after {
+  position: absolute;
+  background: #ec5863;
+  content: '';
+  border-radius: 30px;
+  width: 127.47px;
+  height: 127.47px;
+  bottom: -40px;
+  right: -90px;
+  transform: rotate(-30deg);
+  @media screen and (max-width: 767.99px) {
+    left: -15px;
+  }
+}
+
+.healthcare__column_3::after {
+  position: absolute;
+  background: #ec5863;
+  content: '';
+
+  width: 65.75px;
+  height: 65.75px;
+  top: -20px;
+  right: -35px;
+  border-radius: 16px;
+  transform: rotate(-30deg);
+
+  @media screen and (max-width: 767.99px) {
+    top: 169px;
+  }
+}
